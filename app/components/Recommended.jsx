@@ -13,7 +13,7 @@ const Recommended = () => {
       onClick={onClickHandler}
       disabled={!hasPrev}
       aria-label={label}
-      className="text-5xl absolute left-0 top-1/2 -translate-y-1/2 text-mint_ cursor-pointer z-50 hover:scale-105"
+      className="text-5xl absolute left-0 top-1/2 -translate-y-1/2 text-mint_ cursor-pointer z-40 hover:scale-105"
     >
       <GrPrevious />
     </button>
@@ -24,7 +24,7 @@ const Recommended = () => {
       onClick={onClickHandler}
       disabled={!hasNext}
       aria-label={label}
-      className="text-5xl absolute right-0 top-1/2 -translate-y-1/2 text-mint_ cursor-pointer z-50 hover:scale-105"
+      className="text-5xl absolute right-0 top-1/2 -translate-y-1/2 text-mint_ cursor-pointer z-40 hover:scale-105"
     >
       <GrNext />
     </button>
@@ -70,22 +70,90 @@ const Recommended = () => {
         >
           <div>
             <div className="relative mx-auto h-80 w-80">
-              <Image src="/img/carousel.jpg" alt="" fill />
+              <Image
+                src="/img/bleed_it_out.jpg"
+                alt=""
+                fill
+                priority
+                sizes="(max-width: 600px) 100vw, (max-width: 1024px) 80vw, 120px"
+              />
             </div>
           </div>
           <div>
             <div className="relative mx-auto h-80 w-80">
-              <Image src="/img/carousel.jpg" alt="" fill />
+              <Image
+                src="/img/come_and_get_your_love.jpg"
+                alt=""
+                fill
+                priority
+                sizes="(max-width: 600px) 100vw, (max-width: 1024px) 80vw, 120px"
+              />
             </div>
           </div>
           <div>
             <div className="relative mx-auto h-80 w-80">
-              <Image src="/img/carousel.jpg" alt="" fill />
+              <Image
+                src="/img/hotel_california.jpg"
+                alt=""
+                fill
+                priority
+                sizes="(max-width: 600px) 100vw, (max-width: 1024px) 80vw, 120px"
+              />
             </div>
           </div>
           <div>
             <div className="relative mx-auto h-80 w-80">
-              <Image src="/img/carousel.jpg" alt="" fill />
+              <Image
+                src="/img/lovely.jpg"
+                alt=""
+                fill
+                priority
+                sizes="(max-width: 600px) 100vw, (max-width: 1024px) 80vw, 120px"
+              />
+            </div>
+          </div>
+          <div>
+            <div className="relative mx-auto h-80 w-80">
+              <Image
+                src="/img/man_without_love.jpg"
+                alt=""
+                fill
+                priority
+                sizes="(max-width: 600px) 100vw, (max-width: 1024px) 80vw, 120px"
+              />
+            </div>
+          </div>
+          <div>
+            <div className="relative mx-auto h-80 w-80">
+              <Image
+                src="/img/no_scrubs.jpg"
+                alt=""
+                fill
+                priority
+                sizes="(max-width: 600px) 100vw, (max-width: 1024px) 80vw, 120px"
+              />
+            </div>
+          </div>
+          <div>
+            <div className="relative mx-auto h-80 w-80">
+              <Image
+                src="/img/open_letter.jpg"
+                alt=""
+                fill
+                priority
+                sizes="(max-width: 600px) 100vw, (max-width: 1024px) 80vw, 120px"
+              />
+            </div>
+          </div>
+          <div>
+            <div className="relative mx-auto h-80 w-80">
+              <Image
+                src="/img/red_right_hand.jpg"
+                alt=""
+                fill
+                priority
+                sizes="(max-width: 600px) 100vw, (max-width: 1024px) 80vw, 120px"
+              />
             </div>
           </div>
         </Carousel>

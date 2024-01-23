@@ -1,12 +1,7 @@
 import React from "react";
-import AudioPlayer from "../components/AudioPlayer";
 
 const page = () => {
-  return (
-    <>
-      <AudioPlayer />
-    </>
-  );
+  return <div>page</div>;
 };
 
 export default page;

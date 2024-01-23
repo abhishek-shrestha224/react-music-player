@@ -1,4 +1,5 @@
 import { MusicContextProvider } from "./context/MusicContext";
+import { QueryContextProvider } from "./context/QueryContext";
 import "./globals.css";
 
 export const metadata = {
@@ -9,8 +10,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        <MusicContextProvider>{children}</MusicContextProvider>
+      <body suppressHydrationWarning={true}>
+        <QueryContextProvider>
+          <MusicContextProvider>{children}</MusicContextProvider>
+        </QueryContextProvider>
       </body>
     </html>
   );
